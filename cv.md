@@ -12,7 +12,7 @@
 
 ## _**Summary**_
 
-> My goal is to become a professional web developer. Create interesting projects. Interesting direction of design. Attentive to details. Fast learner. Teamwork experience. Stress-resistant.
+> My goal is to become a professional web developer. Create interesting projects. Interesting direction of design. Attentive to details. Fast learner. Teamwork experience. Stress-resistant
 
 ## _**Skills**_
 
