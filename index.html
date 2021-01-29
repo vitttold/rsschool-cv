@@ -115,9 +115,9 @@
 
         let panel = document.querySelectorAll(".panel");<br>
         for (let i = 0; i < panel.length; i++) {<br>
-          panel[i].addEventListener("click", toggleClass);}<br>
-          for (let i = 0; i < panel.length; i++) {<br>
-            panel[i].addEventListener("transitionend", toggleActive);}<br>
+        panel[i].addEventListener("click", toggleClass);}<br>
+        for (let i = 0; i < panel.length; i++) {<br>
+           panel[i].addEventListener("transitionend", toggleActive);}<br>
             function toggleClass() {<br>
             this.classList.toggle("open");}<br>
             function toggleActive(e) {<br>
