@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css"
+    href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+
+  <title>Vitali Herasimenka</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="wrapper_background">
+      <div class="color_block color_block_up"></div>
+      <div class="color_block color_block_down"></div>
+      <img src="./image/profileimage.jpg" alt="profileimage" />
+      <div class="border"></div>
+    </div>
+
+    <header>
+      <div class="header_block">
+        <h1>Vitali<br />Herasimenka</h1>
+        <h2>Summary</h2>
+        <p class="text">
+          My goal is to become a professional web developer. Create
+          interesting projects. Interesting direction of design. Attentive to
+          details. Fast learner. Teamwork experience. Stress-resistant
+        </p>
+      </div>
+    </header>
+
+    <section class="wrapper_contact">
+      <ul class="contact text">
+        <li>
+          <i class="fa fa-mobile fa-2x icon"></i>
+          +375 29 555-67-60
+        </li>
+        <li>
+          <i class="fa fa-github fa-2x icon"></i>
+          <a href="https://github.com/vitttold">github</a>
+        </li>
+        <li>
+          <span><i class="fa fa-envelope fa-1x icon"></i>
+            <span> vitttold@inbox.ru</span>
+        </li>
+      </ul>
+    </section>
+
+    <main>
+      <div class="wrapper_main">
+        <div class="skills main_block">
+          <h2>Skills</h2>
+          <ul>
+            <li class="text">HTML</li>
+            <span class="stars">&#x2605; &#x2605; &#x2605; &#x2605; &#x2606;</span>
+
+            <li class="text">CSS</li>
+            <span class="stars">&#x2605; &#x2605; &#x2605; &#x2605; &#x2606;</span>
+
+            <li class="text">JS</li>
+            <span class="stars">&#x2605; &#x2605; &#x2605; &#x2606; &#x2606;</span>
+
+            <li class="text">Graphic software</li>
+            <span class="stars">&#x2605; &#x2605; &#x2605; &#x2605; &#x2605;</span>
+
+          </ul>
+        </div>
+
+
+        <article class="main_block">
+          <h2>Experience</h2>
+          <p class="text">Website creation on Bitrix lash.by.
+            Experience in graphic design in the printing industry
+          </p>
+        </article>
+
+        <div class="main_block">
+          <h2>Education</h2>
+          <p class="text">
+            Training at EPAM. Graphic design course
+          </p>
+        </div>
+
+        <div class="main_block">
+          <h2>English</h2>
+          <p class="text">
+            A1—A2. Now I pass an online course
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <aside class="code">
+      <h2>Code example</h2>
+      <p class="text_code">
+        function playSound(e) {<br>
+        const audio = document.querySelector(`audio[code=${e.code}]`); <br>
+        const key = document.querySelector(`.key[code=${e.code}]`);<br>
+        if (!audio) return;<br>
+        audio.currentTime = 0;<br>
+        audio.play();<br>
+        key.classList.add("play");}<br>
+        function removeTransition(e) {<br>
+        if (e.propertyName !== "transform") return;<br>
+        this.classList.remove("play");}<br>
+        const keys = document.querySelectorAll(".key");<br>
+        keys.forEach((key) => key.addEventListener("transitionend", removeTransition));<br>
+        window.addEventListener("keydown", playSound);<br>
+        <br>
+
+        let panel = document.querySelectorAll(".panel");<br>
+        for (let i = 0; i < panel.length; i++) {<br>
+          panel[i].addEventListener("click", toggleClass);}<br>
+          for (let i = 0; i < panel.length; i++) {<br>
+            panel[i].addEventListener("transitionend", toggleActive);}<br>
+            function toggleClass() {<br>
+            this.classList.toggle("open");}<br>
+            function toggleActive(e) {<br>
+            this.classList.toggle("open-active");}
+      </p>
+    </aside>
+  </div>
+</body>
+
+</html>
