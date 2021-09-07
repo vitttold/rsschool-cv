@@ -27,7 +27,7 @@
 ## _**Experience**_
 
 > Web sites lash.by, shuga.by.
-> Experience in graphic design in the printing industry
+> Experience in graphic design in the printing industry.
 
 ## _**Education**_
 
