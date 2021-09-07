@@ -31,9 +31,9 @@
 
 ## _**Education**_
 
-> Training at EPAM
+> Training at EPAM.
 
-> Graphic design course
+> Graphic design course.
 
 ## _**English**_
 
