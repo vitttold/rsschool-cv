@@ -1,5 +1,11 @@
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+
 }
 
 body {
@@ -17,6 +23,7 @@ body {
 }
 
 .backround {
+  z-index: -100;
 }
 
 .circle {
@@ -64,7 +71,7 @@ body {
   position: absolute;
   width: 200px;
   height: 211px;
-  background-image: url(img/line.svg);
+  background-image: url(img/svg/line.svg);
   right: 0;
 }
 
@@ -72,7 +79,7 @@ body {
   position: absolute;
   width: 150px;
   height: 55px;
-  background-image: url(img/line2.svg);
+  background-image: url(img/svg/line2.svg);
   right: 120px;
   bottom: 0;
 }
@@ -115,16 +122,38 @@ body {
 .block-small-one-down {
   bottom: 0;
   left: 118px;
+  z-index: 1000;
 }
 
 .block-small-two-down {
   bottom: 0;
   left: 138px;
+  z-index: 1000;
 }
 
 .wrapper {
   max-width: 600px;
   margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  background-color: #efe0cb;
+  z-index: 3000;
+  opacity:90%
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 20px 100px;
+}
+.nav-ul li:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
 }
 
 .header {
@@ -162,12 +191,17 @@ h2 {
 
 ul {
   list-style: none;
+  margin: 5px 0 0 0;
 }
 
 .contacts-ul {
   margin-top: 50px;
   margin-right: 10px;
   min-width: 185px;
+}
+
+.line-height {
+  line-height: 19px;
 }
 
 li img {
@@ -184,6 +218,19 @@ h3 {
   margin-bottom: 0;
 }
 
+.experience {
+  display: flex;
+  gap: 20px;
+}
+
+.experience img {
+  margin: 10px 0 0 0;
+  box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.2);
+}
+.h3-aside {
+  margin-top: 15px;
+}
+
 .main {
   display: flex;
   margin-top: 30px;
@@ -191,14 +238,17 @@ h3 {
 
 .column-background {
   max-width: 300px;
-  padding: 10px 0px 40px 20px;
+  padding: 10px 0px 20px 20px;
   background-color: #efe0cb;
   position: relative;
 }
+.column-background-code {
+  padding: 10px 0px 7px 20px;
+}
+
 
 .code {
   margin-top: 20px;
-  height: 360px;
 }
 
 aside {
@@ -212,7 +262,7 @@ aside {
 
 .footer {
   display: flex;
-  margin-top: 40px;
+  margin: 40px 0 0 24%;
   gap: 20px;
   align-items: center;
 }
@@ -224,6 +274,7 @@ aside {
 .footer-git {
   display: flex;
   align-items: center;
+  z-index: 2000;
 }
 
 .git {
@@ -238,8 +289,109 @@ aside {
   color: #748493;
 }
 
+.tv {
+  position: relative;
+}
+.tv-set {
+  position: absolute;
+  top: -55px;
+  right: -80px;
+}
+.youtoube {
+  position: absolute;
+  top: 26px;
+  right: -17px;
+}
+
+.hamburger {
+  position: absolute;
+  left: 5%;
+  top: 2.5%;
+  width: 31px;
+  height: 25px;
+  content: "";
+  z-index: 2000;
+  cursor: pointer;
+  transition: 1s;
+}
+
+
+.hamburger-new {
+  display: none;
+  position: absolute;
+  left: 5%;
+  top: 2.5%;
+  width: 31px;
+  height: 23px;
+  content: "";
+  z-index: 2000;
+  cursor: pointer;
+  z-index: 3001;
+
+  }
+
+  .visible {
+    display: block;
+  }
+  
+  .non-visible {
+    display: none;
+  }
+
+.hamburger-line {
+
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #748493;
+  border-radius: 5px;
+ }
+ .color {
+  color: #800;
+  font-weight: 600;
+
+ }
+
+.line1 {
+    top: 0px;
+}
+
+.line2 {
+    top: 10px;
+}
+
+.line3 {
+    top: 20px;
+}
+
+
+.hamburger-new-line {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: #748493;
+  border-radius: 5px;
+ }
+ 
+.new-line1 {
+  left: 2px;
+}
+
+.new-line2 {
+  left: 14px;
+}
+
+.new-line3 {
+  left: 26px;
+}
+
+
+
+
 @media screen and (max-width: 643px) {
   .main-wrapper {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     margin: 0 auto;
     margin-top: 30px;
@@ -290,8 +442,10 @@ aside {
 
   .footer {
     display: flex;
+    padding-bottom: 80px;
+    margin: 0 auto;
     align-items: center;
-    margin-bottom: 60px;
+    text-align: center;
   }
 
   .wrapper {
@@ -305,5 +459,45 @@ aside {
 
   .block-buttom {
     left: -25px;
+  }
+
+  aside {
+    margin-left: 0px;
+  }
+  .tv {
+    width: 300px;
+    height: 200px;
+  }
+
+  .tv-set {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+  }
+  .youtoube {
+    position: absolute;
+    top: 81px;
+    right: 113px;
+  }
+
+  nav {
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    background-color: #efe0cb;
+    z-index: 3000;
+    opacity:70%
+  }
+  
+  .nav-ul {
+    flex-direction: column;
+    padding: 20px 20px 20px 100px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .nav-ul li:hover {
+    transform: none;
+    transition: none;
   }
 }

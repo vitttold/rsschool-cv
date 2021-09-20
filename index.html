@@ -1,153 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="default.min.css" />
+    
     <title>Vitali Herasimenka</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="main-wrapper">
 
-        <div class="backround">
-            <div class="circle"></div>
-            <div class="circle-buttom"></div>
-            <div class="circle-small"></div>
-            <div class="circle-small-buttom"></div>
+      <nav class="nav"> 
+        <ul class="nav-ul">
+          <a href="#contacts"><li>Contacts</li></a>
+          <a href="#about"><li>About me</li></a>
+          <a href="#experience"><li>Experience</li></a>
+          <a href="#code"><li>Code example</li></a>
+          <a href="#skills"><li>Skills</li></a>
+          <a href="#education"><li>Education</li></a>
+         </ul>
+      </nav>
 
-            <div class="circle-border"></div>
-            <div class="circle-border-buttom"></div>
-            <div class="block"></div>
+      <div class="hamburger visible">
+        <div class="hamburger-line line1"></div>
+        <div class="hamburger-line line2"></div>
+        <div class="hamburger-line line3"></div>
+      </div>
 
-            <div class="block-small block-small-one"></div>
-            <div class="block-small block-small-two"></div>
-            <div class="block-small block-small-one-down"></div>
-            <div class="block-small block-small-two-down"></div>
+      <div class="hamburger-new non-visible">
+        <div class="hamburger-new-line new-line1"></div>
+        <div class="hamburger-new-line new-line2"></div>
+        <div class="hamburger-new-line new-line3"></div>
+      </div>
 
+    
+
+
+      <div class="backround">
+        <div class="circle"></div>
+        <div class="circle-buttom"></div>
+        <div class="circle-small"></div>
+        <div class="circle-small-buttom"></div>
+
+        <div class="circle-border"></div>
+        <div class="circle-border-buttom"></div>
+        <div class="block"></div>
+
+        <div class="block-small block-small-one"></div>
+        <div class="block-small block-small-two"></div>
+        <div class="block-small block-small-one-down"></div>
+        <div class="block-small block-small-two-down"></div>
+      </div>
+
+      <div class="wrapper">
+        <header class="header">
+          <img class="main-img" src="img/profileimage.jpg" alt="main photo" />
+          <div>
+            <h1>Vitali <br />Herasimenka</h1>
+            <h2>Front-end developer</h2>
+          </div>
+
+        </header>
+      </div>
+
+      <div class="wrapper contacts">
+        <ul id="contacts" class="contacts-ul">
+          <li>
+            <img src="img/mobile.png" alt="icon" />
+            <span>+375 29 555-67-60</span>
+          </li>
+          <li>
+            <img src="img/git.png" alt="icon" />
+            <a href="https://github.com/vitttold">github</a>
+          </li>
+          <li>
+            <img src="img/mail.png" alt="icon" />
+            <span> vitttold@inbox.ru</span>
+          </li>
+        </ul>
+
+        <div id="about" class="about">
+          <h3>About me</h3>
+          <article>
+            My goal is to become a professional web developer. Create
+            interesting projects. Interesting direction of design. Attentive to
+            details. Fast learner. Teamwork experience. Stress-resistant.
+          </article>
+        </div>
+      </div>
+
+      <main class="wrapper main">
+        <div class="column">
+          <section class="column-background">
+            <h3 id="experience">experience</h3>
+            <div class="experience">
+              <a target="_blank" href="https://shuga.by"
+                ><img src="img/shuga.jpg" alt="shuga"
+              /></a>
+              <p>
+                <a target="_blank" href="https://shuga.by"><span class="color">shuga.by</span></a><br />
+                Used CSS, HTML, <br />JS, PHP
+              </p>
+            </div>
+          </section>
+
+          <section class="code column-background column-background-code">
+            <h3 id="code">Code example</h3>
+            <pre><code>const moveAt = (e) => {
+mapImage.style.left = 
+e.pageX - leftIndent + "px";
+if (e.pageX >= (wrapper.
+offsetWidth)) {
+stopDrag();
+} else if (e.pageX &lt;= 0) {
+stopDrag();
+}
+mapImage.style.top = e.pageY -
+(180 - window.scrollY * 2) - 
+topIndent + "px";
+}</code></pre>
+            <div class="block-buttom"></div>
+          </section>
         </div>
 
-        <div class="wrapper">
-            <header class="header">
-                <img class="main-img" src="img/profileimage.jpg" alt="main photo">
-                <div>
-                    <h1>Vitali <br>Herasimenka</h1>
-                    <h2>Front-end developer</h2>
-                </div>
-            </header>
-        </div>
+        <aside>
+          <div>
+            <h3 id="skills">skills</h3>
 
-        <div class="wrapper contacts">
-            <ul class="contacts-ul">
-                <li>
-                    <img src="img/mobile.png" alt="icon">
-                    <span>+375 29 555-67-60</span>
-                </li>
-                <li>
-                    <img src="img/git.png" alt="icon">
-                    <a href="https://github.com/vitttold">github</a>
-                </li>
-                <li>
-                    <img src="img/mail.png" alt="icon">
-                    <span> vitttold@inbox.ru</span>
-                </li>
+            <ul class="center">
+              <li class="line-height">
+                HTML<br />
+                <span class="stars"
+                  >&#x2605; &#x2605; &#x2605; &#x2605; &#x2606;</span
+                >
+              </li>
+
+              <li class="line-height">
+                CSS<br />
+                <span class="stars"
+                  >&#x2605; &#x2605; &#x2605; &#x2605; &#x2606;</span
+                >
+              </li>
+
+              <li class="line-height">
+                JS<br />
+                <span class="stars"
+                  >&#x2605; &#x2605; &#x2605; &#x2606; &#x2606;</span
+                >
+              </li>
+
+              <li class="line-height">
+                Graphic software<br />
+                <span class="stars"
+                  >&#x2605; &#x2605; &#x2605; &#x2605; &#x2605;</span
+                >
+              </li>
             </ul>
+          </div>
 
+          <div class="center">
+            <h3 id="education" class="h3-aside">Education</h3>
+            Training at EPAM. <br />Graphic design course
+          </div>
 
-            <div class="about">
-                <h3>About me</h3>
-                <div>
-                    My goal is to become a professional web developer. Create interesting projects. Interesting
-                    direction of design. Attentive to details. Fast learner. Teamwork experience. Stress-resistant.
-                </div>
+          <div class="center">
+            <h3 class="h3-aside">English</h3>
+            A1—A2. <br />Now I pass <br />an online course
+          </div>
+
+          <div>
+            <div class="tv">
+              <img class="tv-set" src="img/tv.png" alt="tv" />
+
+              <iframe
+                class="youtoube"
+                width="102"
+                height="85"
+                src="https://www.youtube-nocookie.com/embed/b9atgI93MYY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
+          </div>
+        </aside>
+      </main>
+      <footer class="wrapper footer">
+        <p class="year">2021</p>
+        <div>
+          <a href="https://rs.school/js/"
+            ><img class="school" src="img/rs_school_js.svg" alt="logo"
+          /></a>
         </div>
-
-        <main class="wrapper main">
-
-            <div class="column">
-                <section class="experience column-background">
-                    <h3>experience</h3>
-
-                    Web sites <a href="https://lash.by">lash.by</a>, <a href="https://shuga.by">shuga.by</a> .
-                    <br>Experience in graphic design in the printing industry.
-                </section>
-
-                <section class="code column-background">
-                    <h3>Code example</h3>
-                    <p><code>
-                        const moveAt = (e) => {<br>
-                            mapImage.style.left = e.pageX - leftIndent + "px";<br>
-                            if (e.pageX >= (wrapper.offsetWidth)) {<br>
-                              stopDrag();<br>
-                            } else if (e.pageX &lt;= 0) {<br>
-                              stopDrag();<br>
-                            }<br>
-                            mapImage.style.top = e.pageY - <br>(180 - window.scrollY * 2) - topIndent + "px";
-                                                    }                          
-                    </code></p>
-                    <div class="block-buttom"></div>
-
-                </section>
-            </div>
-
-            <aside>
-                <div >
-                    <h3>skills</h3>
-
-                    <ul class="center">
-                        <li>
-                            HTML<br>
-                            <span class="stars">&#x2605; &#x2605; &#x2605; &#x2605; &#x2606;</span>
-                        </li>
-
-                        <li>
-                            CSS<br>
-                            <span class="stars">&#x2605; &#x2605; &#x2605; &#x2605; &#x2606;</span>
-                        </li>
-
-                        <li>
-                            JS<br>
-                            <span class="stars">&#x2605; &#x2605; &#x2605; &#x2606; &#x2606;</span>
-                        </li>
-
-                        <li>
-                            Graphic software<br/>
-                            <span class="stars">&#x2605; &#x2605; &#x2605; &#x2605; &#x2605;</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="center">
-                    <h3>Education</h3>
-                    Training at EPAM. <br>Graphic design course
-                </div>
-
-                <div class="center"> 
-                    <h3>English</h3>
-                    A1—A2. <br>Now I pass an online course
-                </div>
-
-                <footer class="wrapper footer">
-                    <p class="year">2021</p>
-                    <div>
-                        <a href="https://rs.school/js/"><img class="school" src="img/rs_school_js.svg" alt="logo"></a>
-                    </div>
-                    <div class="footer-git">
-                        <img class="git" src="img/git.png" alt="icon">
-                        <a href="https://github.com/vitttold">vitttold</a>
-                    </div>
-                </footer>
-
-             </aside>
-
-        </main>
+        <div class="footer-git">
+          <img class="git" src="img/git.png" alt="icon" />
+          <a href="https://github.com/vitttold">vitttold</a>
+        </div>
+      </footer>
     </div>
-</body>
-
+    <script src="js/main.js"></script>
+    <script src="js/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
 </html>
